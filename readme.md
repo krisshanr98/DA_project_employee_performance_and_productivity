@@ -278,9 +278,9 @@ FROM
     * Review large teams (>37K employees) for efficiency and consider redistributing staff for better management.
 
 ## 📌 Access Files
-1. Data (.csv) file -
-2. Power BI (.pbix) -
-3. PostgreSQL (.sql) files - 
+1. Data (.csv) file - [File Location](https://github.com/krisshanr98/DA_project_employee_performance_and_productivity/blob/main/data_for_query.csv)
+2. Power BI (.pbix) - [File Location](https://github.com/krisshanr98/DA_project_employee_performance_and_productivity/blob/main/Dashboard.pbix)
+3. PostgreSQL (.sql) files - [Folder Location](https://github.com/krisshanr98/DA_project_employee_performance_and_productivity/tree/main/sql_queries)
 
 ## 📄 **License**
 This project is open source for learning and personal portfolio use.  
