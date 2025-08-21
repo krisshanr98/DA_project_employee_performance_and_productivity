@@ -63,7 +63,7 @@ WITH (FORMAT csv, HEADER true);
 SELECT *
 FROM employee_performance;
 ```
-![alt text](Screenshots/image-2.png)
+![alt text](Screenshots/sql_working.png)
 
 4. Made further queries to accomodate each case
 + Categorizing employees by tenure group & work type
@@ -120,21 +120,21 @@ FROM
 ```
 ### Power BI
 1. Imported the SQL queries into Power BI
-![alt text](Screenshots/image-3.png)
-![alt text](Screenshots/image-6.png)
+![alt text](Screenshots/sql_to_pbi_import.png)
+![alt text](Screenshots/pbi_queries.png)
 
 2. Made dashboards for each case
 + Churn Prediction
-![alt text](Screenshots/image-7.png)
+![alt text](Screenshots/churn_prediction.png)
 
 + Productivity Analysis
-![alt text](Screenshots/image-8.png) 
+![alt text](Screenshots/productivity_analysis.png) 
 
 + Performance Evaluation
-![alt text](Screenshots/image-9.png)
+![alt text](Screenshots/performance_evaluation.png)
 
 + HR Analysis
-![alt text](Screenshots/image-10.png)
+![alt text](Screenshots/hr_analysis.png)
 
 ## 📈 Key Insights
 + **Churn Prediction**
@@ -213,12 +213,78 @@ FROM
 
 + **Performance Evaluation**
 
-    *1. Overall Performance Score*
-    * The overall average performance score is 3
-    * The average employee satisfaction score is 3.00
+    *1. Overall Performance & Satisfaction*
+    * The average performance score is 3 (out of 5).
+    * The average employee satisfaction score is also 3.0, showing a neutral or average sentiment overall.
 
     *2. Department-wise Performance*
     * Relatively, all the departments have the same average score (3)
-    * Figures that all the departments peroform at a moderate pace. 
+    * Figures that all the departments perform at a moderate pace. Neither over-performing nor under-performing.
+
+    *3. Education-wise Performance*
+    * All the employee groups of differet education levels relatively have the same average performance score.
+    * Figures that all the groups of different education levels perform at a moderate pace. Neither over-performing nor under-performing. 
+
+    *4. Performance according to Remote Work Frequency*
+    * All the groups relatively have the same average performance score.
+    * All the groups perform at a moderate pace. Neither over-performing nor under-performing. 
+
+    *5. Performance according to Salary*
+    * The scatter plot shows a slight upward trend — employees with higher performance scores tend to have higher salaries.
+    * Some variations could be noticed like some employees with lower scores earn higher than certain employees with a performance score of 5. This could be due to higher positions, work sector etc.  
+
+    *6. Performance according to Team size*
+    * The scatter plot shows a slight negative correlation — as team size increases, performance scores slightly decrease.
+    * Suggests that smaller teams may allow for better performance outcomes.
+
+    **Conclusions**
+    * Uniform performance scores across departments, education levels, and work types suggest a standardized evaluation system—but it may also indicate a lack of differentiation in performance measurement.
+    * The link between higher performance and higher salary supports merit-based pay systems.
+    * Smaller teams show slightly higher performance, so leaner team structures may help maximize productivity.
+    * Consider reviewing the performance evaluation methodology to ensure it truly differentiates between employee contributions.
 
 + **HR Analysis**
+
+    *1. Employee Age Distribution*
+    * Majority of employees are evenly spread between the 31–60 age groups (25K+ in each).
+    * The youngest group (21–30) has slightly fewer employees (~23K), which could hint at lower recent recruitment or higher attrition among younger staff.
+
+    *2. Education Levels*
+    * Most employees hold at least a Bachelor’s degree (50K), followed by High School graduates (30K).
+    * A smaller share have Master’s (15K) and PhDs (5K), showing the workforce is mainly undergraduate-qualified.
+
+    *3. Gender Representation*
+    * Male: 48% | Female: 48% | Other: 4% – Gender balance is nearly equal, with a small but notable presence of non-binary/other identities.
+    * This reflects strong diversity compared to typical industry trends.
+
+    *4. Team Size Distribution*
+    * Employees are concentrated in large teams (37K), slightly more than medium (31K) and small teams (31K).
+    * Larger teams may suggest centralized departments or higher collaboration requirements.
+
+    *5. Tenure Insights*
+    * Average tenure is 4.5 years, indicating moderate retention.
+    * All departments show similar tenure (≈4.5 years), with IT slightly lower (4.4 years), suggesting higher turnover or faster career progression in tech roles.
+
+    *6. Department Spread*
+    * There are 9 departments represented.
+    * No significant variation in average tenure across departments, but IT may warrant deeper retention analysis.
+
+    **Conclusions**
+    
+    * Strengthen career growth and upskilling programs, especially in IT, to reduce turnover.
+    * Boost recruitment of younger employees (21–30 age group) to balance workforce aging.
+    * Maintain gender balance and expand support for non-binary/other employees to further inclusivity.
+    * Encourage advanced degree sponsorships (Master’s, PhD) to increase highly skilled talent.
+    * Review large teams (>37K employees) for efficiency and consider redistributing staff for better management.
+
+## 📌 Access Files
+1. Data (.csv) file -
+2. Power BI (.pbix) -
+3. PostgreSQL (.sql) files - 
+
+## 📄 **License**
+This project is open source for learning and personal portfolio use.  
+Feel free to fork or adapt.
+
+## ✏ **Author**
+Built by *Krisshan Rajkumar* as part of a personal data analytics portfolio.
